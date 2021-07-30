@@ -19,7 +19,20 @@ namespace Toy
             Manufacturer = string.Empty;
             Name = string.Empty;
             Price = 0;
-            List<string> Notes = new List<string>();
+        }
+
+        public Toy(string notes)
+        {
+            Notes = notes;
+        }
+
+        public void GettingNotes(string note)
+        {
+            Notes += note;
+        }
+        public string ReturningNotes()
+        {
+            return Notes;
         }
 
         public string GetAisle()
